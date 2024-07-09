@@ -1,0 +1,94 @@
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkblue;
+}
+
+.App-header {
+  background-color: #FFF;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  height: 85px;
+}
+
+li {
+  list-style: none;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 100%; 
+
+}
+
+.opcao {
+  min-width: 120px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 50px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  width: 30px;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column; 
+    align-items: center;
+    height: auto;
+
+
+  }
+
+  .lista {
+    flex-direction: column; 
+    align-items: center;
+    max-width: 100%; 
+    overflow: hidden; 
+  }
+
+  .opcao {
+    padding: 10px 20px; 
+  }
+
+  .icones {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .icons {
+    width: 25px;
+    margin: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px; 
+  }
+
+  .opcao {
+    font-size: 14px; 
+    padding: 5px 10px;
+  }
+
+  .icons {
+    width: 20px; 
+  }
+}
